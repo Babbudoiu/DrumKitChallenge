@@ -5,7 +5,7 @@ const floorTom = document.getElementById("floorTomImg");
 const tom1 = document.getElementById("tom1Img");
 const tom2 = document.getElementById("tom2Img");
 const kick = document.getElementById("kickImg");
-const hiHat = document.getElementById("hihatImg");
+const hihat = document.getElementById("hi-hatImg");
 
 
 ride.addEventListener("click", () =>{
@@ -50,7 +50,7 @@ kick.addEventListener("click", () =>{
     document.getElementById("kick").play();
 });
 
-hiHat.addEventListener("click", () =>{
+hihat.addEventListener("click", () =>{
     document.getElementById("hihat").pause();
     document.getElementById("hihat").currentTime = 0;
     document.getElementById("hihat").play();
