@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drumkit Challenge</title>
+</head>
+<body>
+    <div class="main">
+        <div class="key-map">
+            <h2>Key List</h2>
+            <ul class="keymap-list">
+                <li>
+                    <kbd class="key-code">E</kbd>
+                    <span class="key-sound">Hi-hat closed</span>
+                </li>
+
+                <li>
+                    <kbd class="key-code">W</kbd>
+                    <span class="key-sound">Hi-hat open</span>
+                </li>
+
+                <li>
+                    <kbd class="key-code">F</kbd>
+                    <span class="key-sound">Snare</span>
+                </li>
+
+                <li>
+                    <kbd class="key-code">T</kbd>
+                    <span class="key-sound">Tom 1</span>
+                </li>
+
+                <li>
+                    <kbd class="key-code">Y</kbd>
+                    <span class="key-sound">Tom 2</span>
+                </li>
+
+                <li>
+                    <kbd class="key-code">U</kbd>
+                    <span class="key-sound">Floor tom</span>
+                </li>
+
+                <li>
+                    <kbd class="key-code1">B</kbd>
+                    <kbd class="key-code">V</kbd>
+                    <span class="key-sound">Kick</span>
+                </li>
+
+                <li>
+                    <kbd class="key-code">I</kbd>
+                    <span class="key-sound">Ride</span>
+                </li>
+
+                <li>
+                    <kbd class="key-code">O</kbd>
+                    <span class="key-sound">Ride bell</span>
+                </li>
+
+                <li>
+                    <kbd class="key-code">R</kbd>
+                    <span class="key-sound">Crash</span>
+                </li>
+
+            </ul>
+        </div>
+        <h1 class="title">Let's drum!</h1>
+        <div class="drumkit-wrap">
+
+            <img id="rideImg"  class="cymbal" src="images/crash.png" alt="ride cymbal">
+            <img id="crashImg"  class="cymbal" src="images/crash.png" alt="crash cymbal">
+            <img id="hi-hatImg" class="cymbal" src="images/hi-hat.png" alt="hi-hat cymbal">
+            <img id="snareImg"  class="snare" src="images/snare.png" alt="snare">
+            <img id="tom1Img"  class="toms" src="images/left-tom.png" alt="left tom">
+            <img id="tom2Img"  class="toms" src="images/right-tom.png" alt="right tom">
+            <img id="floorTomImg" class="toms" src="images/floor-tom.png"alt="floor tom">
+            <img id="kickImg"  class="kick" src="images/kick.png" alt="kick">
+
+        </div>
+
+        <div data-key="69"  class="key hiHatClosed">
+            <kbd>E</kbd>
+        </div>
+
+        <div data-key="87" class="key hiHatOpen">
+            <kbd>W</kbd>
+        </div>
+
+        <div data-key="70"  class="key snare">
+            <kbd>F</kbd>
+        </div>
+
+        <div data-key="84"  class="key tom1">
+            <kbd>T</kbd>
+        </div>
+
+        <div data-key="89"  class="key tom2">
+            <kbd>Y</kbd>
+        </div>
+
+        <div data-key="85"  class="key floorTom">
+            <kbd>U</kbd>
+        </div>
+
+        <div data-key="66"  class="key kick1">
+            <kbd>B</kbd>
+        </div>
+
+        <div data-key="86"  class="key kick2">
+            <kbd>V</kbd>
+        </div>
+
+        <div data-key="73"  class="key ride">
+            <kbd>I</kbd>
+        </div>
+
+        <div data-key="79"  class="key rideBell">
+            <kbd>O</kbd>
+        </div>
+
+        <div data-key="82"  class="key crash">
+            <kbd>R</kbd>
+        </div>
+
+    </div>
+
+    <audio data-key="69" id="hihat" src="sounds/hihat.wav"></audio>
+    <audio data-key="87" id="openhat" src="sounds/openhat.wav"></audio>
+    <audio data-key="70" id="snare" src="sounds/snare.wav"></audio>
+    <audio data-key="84" id="bigtom" src="sounds/mp3_Big-Rack-Tom.mp3"></audio>
+    <audio data-key="89" id="smalltom" src="sounds/mp3_Small-Rack-Tom.mp3"></audio>
+    <audio data-key="85" id="floortom" src="sounds/tom.wav"></audio>
+    <audio data-key="66" id="kick" src="sounds/kick.wav"></audio>
+    <audio data-key="86" id="kick" src="sounds/kick.wav"></audio>
+    <audio data-key="73" id="ride" src="sounds/Ride-Cymbal-Hit-B-www.fesliyanstudios.com.mp3"></audio>
+    <audio data-key="79" id="ridebell" src="sounds/Ride-Cymbal-Bell-Hit-B-www.fesliyanstudios.com.mp3"></audio>
+    <audio data-key="82"id="crash" src="sounds/Crash-Cymbal-Hit-C-www.fesliyanstudios.com.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
